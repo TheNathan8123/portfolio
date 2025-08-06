@@ -1,0 +1,493 @@
+    /* RESET E BASE */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b1e3b;
+      color: #e0e0e0;
+    }
+
+    /* ========== MENU LATERAL ========== */
+
+    aside {
+      width: 260px;
+      background-color: #152c4a;
+      color: #f0f0f0;
+      padding: 30px 10px;
+      min-height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    aside>div:first-child {
+      margin-bottom: 40px;
+    }
+
+    aside h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    aside img {
+      width: 100px;
+      height: 100px;
+      border-radius: 70%;
+      object-fit: cover;
+      border: 2px solid #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.8rem;
+    }
+
+    /* Links do Menu */
+
+    aside nav a {
+      display: block;
+      color: #a8c0ff;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: 600;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+
+    aside nav a:hover {
+      color: #ffffff;
+      transition: color 0.3s ease-in-out;
+    }
+
+    aside nav a.ativo {
+      color: #ffffff;
+      font-weight: 700;
+      position: relative;
+    }
+
+    aside nav a.ativo::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 3px;
+      background-color: #a8c0ff;
+      border-radius: 3px;
+    }
+
+    aside nav a:focus {
+      outline: 2px solid #a8c0ff;
+      outline-offset: 2px;
+    }
+
+    /* Contatos */
+
+    aside .contato {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    aside .contato a {
+      color: #dceaff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 0;
+      transition: color 0.3s ease;
+    }
+
+    aside .contato a:hover {
+      color: #a8c0ff;
+    }
+
+    aside .contato i {
+      font-size: 1rem;
+    }
+
+    /* ========== ÁREA PRINCIPAL ========== */
+
+    main {
+      max-width: 1200px;
+      margin-left: 450px;
+      padding: 40px 30px;
+      flex: 1;
+      background-color: #0b1e3b;
+    }
+
+    /* Seções com transição suave */
+
+    main>section {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    main>section.ativa {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #a8c0ff;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* ========== PROJETOS ========== */
+
+    .projetos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+    }
+
+    .projeto {
+      background: #1b2b46;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 320px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #eaeaea;
+    }
+
+    .projeto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .projeto img,
+    .projeto iframe {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .projeto h3 {
+      margin-bottom: 10px;
+      color: #81b1ff;
+    }
+
+    .projeto p {
+      color: #c8d6e5;
+      font-size: 0.9rem;
+    }
+
+    #projetos h3 {
+      width: 100%;
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 22px;
+      color: #ccd9ff;
+    }
+
+    .h4-wrapper {
+      width: 100%;
+      text-align: center;
+      margin: 25px 0 10px;
+    }
+
+    #projetos h4 {
+      display: inline-block;
+      font-size: 18px;
+      color: #99bbff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #99bbff;
+      padding-bottom: 4px;
+    }
+
+    #competencias h4 {
+      display: inline-block;
+      font-size: 18px;
+      color: #99bbff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #99bbff;
+      padding-bottom: 4px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 70%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ========== ZOOM ========== */
+
+    /* Estilo da imagem ao passar o mouse */
+    .zoom-img {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Modal fullscreen */
+    .img-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+    }
+
+    /* Fecha ao clicar fora */
+    .img-modal.active {
+      display: flex;
+    }
+
+    /* ========== COMPETÊNCIAS ========== */
+
+    .competencias-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .competencia-card {
+      width: 180px;
+      padding: 15px;
+      background-color: #1b2b46;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: #e0e0e0;
+    }
+
+    .competencia-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .competencia-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    #competencias h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #a8c0ff;
+    }
+
+    #competencias h3 {
+      width: 100%;
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 22px;
+      color: #ccd9ff;
+    }
+
+    /* ========== SOBRE MIM ========== */
+
+    #sobre h2 {
+      color: #a8dadc;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sobre-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .sobre-container img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #a8dadc;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .texto-sobre {
+      max-width: 600px;
+      color: #f1faee;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .sobre-imagem {
+      text-align: center;
+    }
+
+    .sobre-imagem img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .frase-autor {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* ========== DIVISÓRIA ========== */
+
+    .linha-divisoria {
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      /* degrade bonito */
+      border: none;
+      border-radius: 10px;
+      margin: 10px 0 30px;
+      /* ajusta espaçamento acima/abaixo */
+    }
+
+    .linha-subtopico {
+      width: 60px;
+      height: 2px;
+      background-color: #999;
+      border: none;
+      border-radius: 5px;
+      margin: 8px 0 16px;
+      /* ajuste do espaço ao redor */
+    }
+
+    /* ========== RESPONSIVIDADE ========== */
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      aside {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      aside h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      aside nav {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      aside nav a {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+      }
+
+      aside .contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.8rem;
+        margin-top: 10px;
+      }
+
+      aside .contato a {
+        padding: 4px 8px;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .projetos-container,
+      .competencias-container {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .projeto,
+      .competencia-card {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .video-wrapper {
+        padding-top: 56.25%;
+        /* 16:9 proporção */
+      }
+
+      #projetos h3,
+      #competencias h3 {
+        font-size: 1.1rem;
+        margin: 25px 0 10px;
+      }
+    }
