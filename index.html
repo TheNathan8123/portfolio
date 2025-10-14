@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Medina | Portfólio Profissional</title>
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- CSSPORT -->
+  <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER COM NAVEGAÇÃO E THEME TOGGLE
+       ========================================== -->
+  <header>
+    <div class="header-container">
+      <div class="logo">Protagonista
+      </div>
+      
+
+      <!-- Menu de navegação -->
+      <nav id="nav-menu">
+        <a href="#hero" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#skills" class="nav-link">Competências</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Toggle de Tema e Menu Mobile -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div class="theme-toggle" id="theme-toggle"></div>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION (Tela Inicial)
+       ========================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <!-- Texto principal -->
+      <div class="hero-text animate-in">
+        <h1>Gabriel Medina</h1>
+        <p class="subtitle">Designer • Videomaker • Desenvolvedor</p>
+        <p>
+          Transformando ideias em realidade através da <span class="highlight">criatividade</span>,
+          <span class="highlight">tecnologia</span> e <span class="highlight">inovação</span>.
+          Apaixonado por criar experiências digitais que impactam e inspiram.
+        </p>
+
+        <!-- Botões de ação -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i> Ver Projetos
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Entre em Contato
+          </a>
+        </div>
+
+        <!-- Links sociais -->
+        <div class="social-links">
+          <a href="mailto:protagonistacurriculo@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/TheNathan8123" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-medina-a032272a4" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Imagem do perfil com efeito -->
+      <div class="hero-image animate-in">
+        <img src="https://res.cloudinary.com/dlamt1afm/image/upload/v1759190493/minha_foto_qwjt3c.jpg"
+          alt="Gabriel Medina">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SOBRE MIM
+       ========================================== -->
+  <section id="about">
+    <h2 class="section-title">Sobre Mim</h2>
+
+    <div class="about-content">
+      <!-- Imagem e citação -->
+      <div class="about-image">
+        <img src="https://res.cloudinary.com/dlamt1afm/image/upload/v1759190493/minha_foto_qwjt3c.jpg"
+          alt="Gabriel Medina" id="easter-egg-trigger">
+
+        <!-- Easter Egg Icons -->
+        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2d/Plains_Grass_Block.png"
+          alt="Minecraft" class="easter-egg-icon" style="width: 70px; height: 70px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
+          class="easter-egg-icon" style="width: 70px; height: 70px;">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png"
+          alt="JavaScript" class="easter-egg-icon" style="width: 70px; height: 70px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"
+          class="easter-egg-icon" style="width: 70px; height: 70px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP" class="easter-egg-icon"
+          style="width: 80px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
+          class="easter-egg-icon" style="width: 70px; height: 70px;">
+        <img src="https://i.imgur.com/pUs8XTWg.jpg" alt="Anime" class="easter-egg-icon"
+          style="width: 65px; height: 65px; border-radius: 10px;">
+
+        <div class="quote">
+          "A minha vontade de viver fará a seguir"
+        </div>
+      </div>
+
+      <!-- Texto sobre -->
+      <div class="about-text">
+        <h3>👋 Olá, Save Jaz!</h3>
+        <p>
+          Me chamo <span class="highlight">Gabriel Medina</span>, tenho 17 anos e sou um
+          <span class="highlight">sonhador apaixonado por tecnologia</span> e criatividade!
+          Minha jornada no mundo digital começou cedo e desde então venho explorando as infinitas
+          possibilidades que a tecnologia oferece.
+        </p>
+
+        <p>
+          🚀 Minha visão é clara: <span class="highlight">transformar ideias em realidade</span> através
+          da combinação perfeita entre design, vídeo e código. Acredito que a tecnologia não é apenas
+          sobre ferramentas, mas sobre <span class="highlight">criar experiências que impactam vidas</span>
+          e moldam o futuro.
+        </p>
+
+        <p>
+          💡 Meu <span class="highlight">grande sonho profissional</span> é atuar com
+          <span class="highlight">pesquisa e desenvolvimento</span>, explorando novas fronteiras em
+          software e hardware, sempre buscando inovar e contribuir para a evolução tecnológica que
+          beneficia a humanidade.
+        </p>
+
+        <p>
+          🌍 Tenho facilidade com <span class="highlight">inglês</span> (leitura e escrita), o que me
+          permite acessar conhecimento global e colaborar em projetos internacionais. Sou curioso por
+          natureza - adoro estudar tanto <span class="highlight">áreas exatas</span> (física e matemática)
+          quanto <span class="highlight">humanas</span> (história e geografia), pois acredito que a
+          verdadeira inovação vem da interseção de diferentes conhecimentos.
+        </p>
+
+        <p>
+          🎮 Quando não estou criando ou estudando, você me encontra imerso em
+          <span class="highlight">leitura historiográfica</span>, capturando momentos através da
+          <span class="highlight">fotografia</span>, ou explorando mundos virtuais em games com
+          histórias marcantes como <span class="highlight">Red Dead Redemption</span> e universos
+          sandbox como <span class="highlight">Minecraft</span>.
+        </p>
+
+        <p>
+          ✨ Possuo <span class="highlight">excelente comunicação</span> (verbal e escrita),
+          <span class="highlight">aprendo rapidamente</span> novas ferramentas e me adapto com
+          facilidade a diferentes ambientes e desafios. Meu portfólio é um reflexo da minha
+          <span class="highlight">evolução constante</span> e do meu compromisso com a excelência.
+        </p>
+
+        <!-- Estatísticas/Números -->
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Anos de Experiência</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Projetos Concluídos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Tecnologias</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMAÇÃO -->
+    <h3 class="section-title" style="margin-top: 5rem;">🎓 Formação Acadêmica</h3>
+    <div class="education-grid">
+      <!-- Colégio Amplação -->
+      <div class="education-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AbQn1yc-KKumw5s4kfwlxflmXzmE3r967w&s"
+          alt="Colégio Amplação">
+        <h3>Colégio Amplação</h3>
+        <p>Ensino Médio Completo</p>
+        <p style="color: var(--accent-primary); margin-top: 0.5rem;">✓ Concluído</p>
+      </div>
+
+      <!-- UniSenai -->
+      <div class="education-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyPwF1W7UWvqWSm1xEMLVtTlwFR0ibVaygg&s"
+          alt="UniSenai">
+        <h3>UniSenai</h3>
+        <p>Engenharia de Software</p>
+        <p style="color: var(--accent-primary); margin-top: 0.5rem;">📚 2º Período - Cursando</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJETOS
+       ========================================== -->
+  <section id="projects">
+    <h2 class="section-title">💼 Meus Projetos</h2>
+
+    <!-- Filtros de categoria -->
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="video">Vídeo</button>
+      <button class="filter-btn" data-filter="web">Desenvolvimento</button>
+    </div>
+
+    <!-- Grid de projetos -->
+    <div class="projects-grid">
+
+      <!-- PROJETO 1: Indie Vibe Festival -->
+      <div class="project-card" data-category="design">
+        <div class="project-image">
+          <img src="https://res.cloudinary.com/dlamt1afm/image/upload/v1759100486/ivf_poster_fundo_1_l6nufb.png"
+            alt="Indie Vibe Festival" class="zoom-img">
+          <div class="project-overlay">
+            <a href="https://drive.google.com/drive/folders/1cVZg841E3bV4MMjUBk_ux0wYjgy36Xk_?usp=drive_link"
+              target="_blank" title="Ver no Drive">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="zoom-trigger" title="Visualizar">
+              <i class="fas fa-search-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Indie Vibe Festival</h3>
+          <p>Identidade visual completa para festival de música retrô-futurista dos anos 80. Inclui pôsteres, posts para
+            redes sociais e material gráfico diversificado.</p>
+          <div class="project-tags">
+            <span class="tag">Design Gráfico</span>
+            <span class="tag">Branding</span>
+            <span class="tag">Adobe Suite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETO 2: Portfólio HTML -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img
+            src="https://res.cloudinary.com/dlamt1afm/image/upload/v1754579932/imagem_2025-08-07_121727014_hpgw3t.png"
+            alt="Portfólio" class="zoom-img">
+          <div class="project-overlay">
+            <a href="https://thenathan8123.github.io/testeportfolio/" target="_blank" title="Ver Projeto">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/TheNathan8123" target="_blank" title="Ver Código">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Portfólio Responsivo</h3>
+          <p>Website profissional desenvolvido com HTML5, CSS3 e JavaScript puro. Layout moderno e totalmente
+            responsivo, com seções para projetos, competências e contato.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETO 3: Calculadora Científica -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img
+            src="https://res.cloudinary.com/dlamt1afm/image/upload/v1759644278/Captura_de_tela_2025-10-05_025545_lny6gf.png"
+            alt="Calculadora Científica" class="zoom-img">
+          <div class="project-overlay">
+            <a href="https://thenathan8123.github.io/calculadoracientifica" target="_blank" title="Ver Projeto">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/TheNathan8123" target="_blank" title="Ver Código">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Calculadora Científica Avançada</h3>
+          <p>Aplicação web complexa com interface gráfica rica, incluindo calculadora científica, bloco de notas, painel
+            de desenho e histórico de cálculos. Desenvolvida com Python e JavaScript.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETO 4: Calculadora Simples -->
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img
+            src="https://res.cloudinary.com/dlamt1afm/image/upload/v1759690732/Captura_de_tela_2025-10-05_155107_wrkhuj.png"
+            alt="Calculadora" class="zoom-img">
+          <div class="project-overlay">
+            <a href="https://thenathan8123.github.io/calculadora" target="_blank" title="Ver Projeto">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/TheNathan8123" target="_blank" title="Ver Código">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Calculadora Web</h3>
+          <p>Calculadora clean e funcional desenvolvida seguindo boas práticas de código. Interface intuitiva e
+            responsiva, sem bugs identificados em testes.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Clean Code</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJETO 5: Em Desenvolvimento (Vídeo) -->
+      <div class="project-card" data-category="video">
+        <div class="project-image">
+          <img src="https://i.pinimg.com/474x/8e/fa/be/8efabe8d7388409a200fdd8fa69e6530.jpg" alt="Projetos de Vídeo"
+            class="zoom-img">
+          <div class="project-overlay">
+            <a href="" target="_blank" title="Ver no Youtube">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="#" class="zoom-trigger" title="Visualizar">
+              <i class="fas fa-search-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Projetos de Vídeo</h3>
+          <p>Atualmente desenvolvendo projetos de edição audiovisual utilizando Adobe Premiere, After Effects e técnicas
+            avançadas de storytelling visual.</p>
+          <div class="project-tags">
+            <span class="tag">Edição Audiovisual</span>
+            <span class="tag">Premiere Pro</span>
+            <span class="tag">After Effects</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+        ADICIONE MAIS PROJETOS AQUI SEGUINDO O MESMO PADRÃO:
+        - Copie todo o bloco <div class="project-card">...</div>
+        - Altere data-category para: "design", "video" ou "web"
+        - Substitua as imagens, títulos, descrições e tags
+        - Atualize os links nos botões do overlay
+      -->
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       COMPETÊNCIAS/SKILLS
+       ========================================== -->
+  <section id="skills">
+    <h2 class="section-title">🎯 Minhas Competências</h2>
+
+    <div class="skills-container">
+
+      <!-- DESIGN -->
+      <div class="skill-category">
+        <h3>🎨 Design & Edição</h3>
+        <div class="skills-grid">
+
+          <!-- Adobe Photoshop -->
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1024px-Adobe_Photoshop_CC_icon.svg.png"
+              alt="Photoshop">
+            <h4>Photoshop</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+          <!-- Adobe Premiere -->
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/2101px-Adobe_Premiere_Pro_CC_icon.svg.png"
+              alt="Premiere">
+            <h4>Premiere Pro</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+          <!-- After Effects -->
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1200px-Adobe_After_Effects_CC_icon.svg.png"
+              alt="After Effects">
+            <h4>After Effects</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65"></div>
+            </div>
+          </div>
+
+          <!-- Illustrator -->
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1024px-Adobe_Illustrator_CC_icon.svg.png"
+              alt="Illustrator">
+            <h4>Illustrator</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+          <!-- InDesign -->
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/1200px-Adobe_InDesign_CC_icon.svg.png"
+              alt="InDesign">
+            <h4>InDesign</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65"></div>
+            </div>
+          </div>
+
+          <!-- Lightroom -->
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/2101px-Adobe_Photoshop_Lightroom_CC_logo.svg.png"
+              alt="Lightroom">
+            <h4>Lightroom</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+          <!-- CorelDraw -->
+          <div class="skill-card">
+            <img src="https://brandlogos.net/wp-content/uploads/2025/03/coreldraw-logo_brandlogos.net_96dfz-512x512.png"
+              alt="CorelDraw">
+            <h4>CorelDraw</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DESENVOLVIMENTO FRONTEND -->
+      <div class="skill-category">
+        <h3>💻 Desenvolvimento Frontend</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <i class="fab fa-html5" style="color: #e34f26;"></i>
+            <h4>HTML5</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+            <h4>CSS3</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-js-square" style="color: #f7df1e;"></i>
+            <h4>JavaScript</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DESENVOLVIMENTO BACKEND -->
+      <div class="skill-category">
+        <h3>⚙️ Desenvolvimento Backend</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <i class="fab fa-python" style="color: #306998;"></i>
+            <h4>Python</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <i class="fab fa-php" style="color: #777bb3;"></i>
+            <h4>PHP</h4>
+            <p class="skill-level">Intermediário</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C">
+            <h4>C</h4>
+            <p class="skill-level">Básico</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="40"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++">
+            <h4>C++</h4>
+            <p class="skill-level">Básico</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="40"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C#">
+            <h4>C#</h4>
+            <p class="skill-level">Básico</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="35"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <img
+              src="https://images.sftcdn.net/images/t_app-icon-m/p/2f4c04f4-96d0-11e6-9830-00163ed833e7/3163796423/java-runtime-environment-logo.png"
+              alt="Java">
+            <h4>Java</h4>
+            <p class="skill-level">Básico</p>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="35"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TI & FERRAMENTAS -->
+      <div class="skill-category">
+        <h3>🛠️ TI & Ferramentas</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <i class="fas fa-globe" style="color: #4caf50;"></i>
+            <h4>Internet</h4>
+            <p class="skill-level">Intermediário</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-network-wired" style="color: #2196f3;"></i>
+            <h4>Redes</h4>
+            <p class="skill-level">Intermediário</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-desktop" style="color: #795548;"></i>
+            <h4>Sistemas Operacionais</h4>
+            <p class="skill-level">Intermediário</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-microchip" style="color: #ff5722;"></i>
+            <h4>Hardware</h4>
+            <p class="skill-level">Básico</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fas fa-file-word" style="color: #2b579a;"></i>
+            <h4>Pacote Office</h4>
+            <p class="skill-level">Intermediário</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 
+        ADICIONE MAIS CATEGORIAS DE SKILLS AQUI:
+        - Copie todo o bloco <div class="skill-category">...</div>
+        - Altere o h3 para o nome da nova categoria
+        - Adicione novos skill-cards dentro de skills-grid
+      -->
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTATO
+       ========================================== -->
+  <section id="contact">
+    <h2 class="section-title">📬 Entre em Contato</h2>
+
+    <div class="contact-content">
+
+      <!-- Informações de contato -->
+      <div class="contact-info">
+        <h3>Vamos trabalhar juntos!</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+          Estou sempre aberto a novos desafios e oportunidades. Entre em contato comigo através dos canais abaixo:
+        </p>
+
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:protagonistacurriculo@gmail.com">protagonistacurriculo@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <div>
+            <strong>GitHub</strong>
+            <a href="https://github.com/TheNathan8123" target="_blank">@TheNathan8123</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/gabriel-medina-a032272a4" target="_blank">Gabriel Medina</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Localização</strong>
+            <span>Curitiba, Paraná - Brasil</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/5541987824450?text=Olá!%20Vim%20através%20do%20seu%20portfólio!" target="_blank">+55
+              41 98782-4450</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Formulário de contato -->
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required placeholder="Sobre o que você quer falar?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required placeholder="Escreva sua mensagem aqui..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <p>&copy; 2025 Gabriel Medina. Todos os direitos reservados.</p>
+    <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+      Feito com <i class="fas fa-heart" style="color: #e74c3c;"></i> e muito energético ⚡ 
+    </p>
+
+    <div class="footer-links">
+      <a href="#hero">Início</a>
+      <a href="#about">Sobre</a>
+      <a href="#projects">Projetos</a>
+      <a href="#skills">Competências</a>
+      <a href="#contact">Contato</a>
+    </div>
+  </footer>
+
+  <!-- Botão Scroll to Top -->
+  <div class="scroll-top" id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <a href="https://wa.me/5541987824450?text=Olá!%20Vim%20através%20do%20seu%20portfólio!" class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" title="Fale comigo no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Fale comigo!</span>
+  </a>
+
+  <!-- Modal para imagens -->
+  <div class="modal" id="image-modal">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img src="" alt="Imagem ampliada" id="modal-image">
+  </div>
+
+  <!-- ==========================================
+       JAVASCRIPT
+       ========================================== -->
+  <script src="portfolio.js"></script>
+
+
+</body>
+
+</html>
