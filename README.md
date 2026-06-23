@@ -88,3 +88,5 @@ Para usar, basta dar dois cliques no arquivo `.bat` e digitar a mensagem do comm
 Feito com HTML, CSS e JavaScript puro.
 
 A minha vontade de viver fara a seguir.
+
+Powered by Nature's Perversion
